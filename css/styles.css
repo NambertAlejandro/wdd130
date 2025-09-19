@@ -1,6 +1,23 @@
+* {
+    margin : center;
+    padding: center;
+    box-sizing: border-box;
+}
+/* Class Selectors */
+.box{
+    margin : 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+.countainer {
+    width: 800px;
+    margin: 0 auto;
+}
 :root{
-    --main-bg-color: lightgrey;
-    --main-text-color: black;
+    --main-bg-color: #ddd;
+    --main-text-color: #000;
     --main-text-font: Arial, Helvetica, sans-serif;
     --padding: 1rem;
     --border: 1px solid black;
@@ -11,19 +28,26 @@ main {
 }
 aside {
     width : 30rem;
-    margin: 1px;
-    border: var(--border);
-    padding: var(--padding);
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
 }
+aside h2 {
+    position: absolute;
+    top: 57%;
+    left: 350px;
+}
 aside img {
-    width: 200px;
+    width: 300px;
     height: auto;
 }
 main img {
-    max-width: 150px;
+    max-width: 100px;
     height: auto;
+    float: right;
+    margin-bottom: 1rem;
 }
 p {
     padding: 0;
