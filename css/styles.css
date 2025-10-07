@@ -1,6 +1,6 @@
 * {
-    margin : center;
-    padding: center;
+    margin : 0;
+    padding: 0;
     box-sizing: border-box;
 }
 /* Class Selectors */
@@ -15,6 +15,7 @@
     width: 800px;
     margin: 0 auto;
 }
+
 :root{
     --main-bg-color: #ddd;
     --main-text-color: #000;
@@ -23,25 +24,41 @@
     --border: 1px solid black;
     --accent-color: darkblue;
 }
-main {
-    max-width: 840px;
+.grid {
+    display: grid;
+    align-items: center;
 }
+body{
+    font-size: 16px;
+
+}
+main{
+    width: 20rem;
+    margin : 1rem;
+    grid-column: 2;
+    background-color: var(--main-bg-color);
+    display: block;
+}
+
+
 aside {
     width : 30rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
-    padding: 1rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
 }
 aside h2 {
-    position: absolute;
+    position: relative;
     top: 57%;
-    left: 350px;
+    left: 100px;
 }
 aside img {
     width: 300px;
     height: auto;
+    left: 50px;
+    position: relative;
 }
 main img {
     max-width: 100px;
@@ -52,10 +69,29 @@ main img {
 p {
     padding: 0;
 }
-footer {
-    margin-top: 10rem;
+header, .grid, footer{
+    max-width: 840px;
+    margin: 0 auto;
+}
+nav{
+    background-color: var(--main-bg-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent-color);   
+}
+h1{
+    border-bottom: var(--accent-color) 2px solid;
+}
+footer{
     text-align: center;
-    border-top: var(--border);
-    background-color: var(--accent-color);
-
+    border-top: 2px solid var(--accent-color);
 }
