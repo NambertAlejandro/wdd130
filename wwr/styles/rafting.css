@@ -430,3 +430,7 @@ button:hover{
     color: white;
     background-color: rgb(0, 0, 0);
 }
+.map{
+    width: 600px;
+
+}
