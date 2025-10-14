@@ -211,15 +211,7 @@ section h2{
     margin: 20px auto;
     max-width: 400px;
 }
-.map{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 20px;
-    background-color:rgb(3, 1, 34);
-    border:#0d3b66 6px solid;
-}
+
 .funcionarios-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -251,21 +243,64 @@ section h2{
 form legend, label, input, textarea{
     color: black;
     font-family: Roboto, Arial, sans-serif;
+    padding: 5px;
+    margin: 4px 5px;
+    align-items: center;
 }
-form {
-    width: 840px;
-    margin :0 auto;
-    padding: 1rem;
-    border: 6px solid #0d3b66;
-    background-color: #eee;
-    display: grid;
+.radios-form label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;            
+  margin-right: 2px;   
+  font-size: 0.95rem;   
+  white-space: nowrap;  
 }
-fieldset{
+.newsletter-fieldset{
     display: grid;
     grid-gap: .5rem;
-    margin: 1rem;
+    margin: 10px;
     border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
+    padding: 10px;
+}
+.form-grid{
+    width:480px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(250, 235, 215, 0.616);
+    transform: scale(0.9); /* diminui tudo para 90% do tamanho */
+    transform-origin: top center; /* mantém o form centralizado */
+}
+.form-item-column1{
+    width: 10px;
+}
+textarea,
+.form-grid input[type="text"],
+.form-grid input[type="email"]{
+    width: 230px;
+    padding: 10px;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+.map{
+    width: 500px; /* metade do espaço, com folga */
+    margin: 10px;
+    margin-top: 15%;
+    padding: 10px;
+    border: 1px solid #0d3b66;
+    background-color: rgb(3, 1, 34);
+}
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+.map-form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #0d3b66; /* o fundo azul agora cobre tudo */
+  border: 6px solid rgb(3, 1, 34);
+  box-sizing: border-box;
 }
 label{
     text-align: start;
@@ -286,7 +321,8 @@ input[type="checkbox"] {
 }
 button{
     width: 150px;
-    margin: 0 auto;
+    margin: 10px;
+    padding: 10px;
     background-color: #0d3b66;
     color: white;
     border: none;
@@ -297,8 +333,7 @@ button{
 button:hover{
     background-color: darkgreen;
 }
-.form-item-column1,
-.form-item-column2 {
+.form-item-column1 {
     display: grid;
     align-items: center;
     grid-template-columns: 100px 600px;
@@ -351,6 +386,9 @@ button:hover{
   margin-left: 0;
 }
 .newsletter-index{
+    display: grid;
+    grid-template-columns: 2 1fr;
+    width: 840px;
     background-color: #0d3b66;
     border: 6px solid rgb(3, 1, 34);
     padding: 0;
@@ -430,7 +468,22 @@ button:hover{
     color: white;
     background-color: rgb(0, 0, 0);
 }
-.map{
-    width: 600px;
-
+.contact-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 840px;
+  margin: 0 auto !important;
+  background-color: #0d3b66;
+  border: 6px solid rgb(3, 1, 34);
+  box-sizing: border-box;
+  padding: 20px 20px 0 20px; /* padding só interno */
+}
+section{
+    margin: 0;
+    padding: 0;
+}
+form, fieldset, .map-form-container {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }

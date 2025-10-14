@@ -31,11 +31,50 @@
                 <p>Email: <a href="mailto:">info@whitewhater.com</a></p>
             </div>
         </div>
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29270.955982119238!2d-46.672465!3d-23.5012096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1760198551952!5m2!1spt-BR!2sbr"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <section class="contact-container">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29270.955982119238!2d-46.672465!3d-23.5012096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1760198551952!5m2!1spt-BR!2sbr"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form class="form-grid">
+                <fieldset class+="information-form-grid">
+                    <legend>Contact Information</legend>
+                    <div class="form-item-column1">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-item-column1">
+                        <label for="useremail">Email:</label>
+                        <input type="email" name="useremail" id="useremail" placeholder="Your email" required>
+                    </div>
+                </fieldset>
+                <fieldset class="radios-form">
+                    <legend>what is your interest?</legend>
+                    <label>
+                        <input type="radio" id="interest" name="interest" value="A"> General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" id="interest" name="interest" value="B"> Reservation Questions
+                    </label>
+                    <label>
+                        <input type="radio" id="interest" name="interest" value="C"> Website Suggestions
+                    </label>
+                </fieldset>
+                <fieldset class="addiotional">
+                    <legend>Additional Comments</legend>
+                    <label for="comments">Comments or Another Message:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Your comments here..."></textarea>
+                    <div class="newsletter">
+                        <legend>Subscribe to our Newsletter:</legend>
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter">Yes, sign me up!
+                        </label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
         <div class="funcionarios">
             <h2>Our Team</h2>
             <div class="funcionarios-grid">
@@ -53,45 +92,6 @@
                 </figure>
             </div>
         </div>
-        <form>
-            <fieldset>
-                <legend>Contact Information</legend>
-                <div class="form-item-column1">
-                    <label for="fullname">Full Name:</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="Your full name" required>
-                </div>
-                <div class="form-item-column2">
-                    <label for="useremail">Email:</label>
-                    <input type="email" name="useremail" id="useremail" placeholder="Your email" required>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>What is your interest?</legend>
-                <div class="form-item column3">
-                    <label>
-                        <input type="radio" id="interest" name="interest" value="A"> General Inquiry
-                    </label>
-                    <label>
-                        <input type="radio" id="interest" name="interest" value="B"> Reservation Questions
-                    </label>
-                    <label>
-                        <input type="radio" id="interest" name="interest" value="C"> Website Suggestion
-                    </label>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Additional Comments</legend>
-                <label for="comments">Comments or Another Message:</label>
-                <textarea id="comments" name="comments" rows="4" placeholder="Your comments here..."></textarea>
-            </fieldset>
-            <fieldset class="newsletter">
-                <legend>Subscribe to our Newsletter:</legend>
-                <label for="newsletter">
-                    <input type="checkbox" id="newsletter" name="newsletter">Yes, sign me up!
-                </label>
-            </fieldset>
-            <button type="submit">Submit</button>
-        </form>
     </main>
     <footer class="footer1">
         <p>© 2025 - White Water Rafting - Nambert Eleuterio</p>
